@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Video List</title>
+</head>
+<body>
+    <h1>Uploaded Videos</h1>
+    <ul>
+        {% for video in videos %}
+            <li>
+                <a href="{% url 'view_video' video.pk %}">{{ video.title }}</a> (Uploaded at: {{ video.uploaded_at }})
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
