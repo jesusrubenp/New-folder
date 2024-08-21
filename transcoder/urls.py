@@ -8,3 +8,5 @@ urlpatterns = [
     path('videos/', views.video_list, name='video_list'),
     path('videos/<int:pk>/', views.view_video, name='view_video'),
 ]
+
+#prueba de comentario para algo 
